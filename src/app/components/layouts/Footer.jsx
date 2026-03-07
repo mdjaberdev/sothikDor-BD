@@ -70,7 +70,7 @@ const Footer = () => {
                 <li>
                   <button
                     onClick={() => handleCategoryClick("সব")}
-                    className="hover:text-green-600 transition-colors"
+                    className="hover:text-green-600 transition-colors cursor-pointer"
                   >
                     হোম পেজ
                   </button>
@@ -78,14 +78,16 @@ const Footer = () => {
                 <li>
                   <button
                     onClick={() => handleCategoryClick("সব")}
-                    className="hover:text-green-600 transition-colors"
+                    className="hover:text-green-600 transition-colors cursor-pointer"
                   >
                     আজকের বাজার দর
                   </button>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://github.com/mdjaberdev"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-green-600 transition-colors"
                   >
                     আমাদের সম্পর্কে
@@ -120,11 +122,11 @@ const Footer = () => {
               <ul className="space-y-4 text-sm text-gray-500">
                 <li className="flex items-center gap-3">
                   <FaPhoneAlt className="text-green-600" />
-                  <span>+৮৮০ ১২৩৪-৫৬৭৮৯০</span>
+                  <span>+880 1811956107</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <FaEnvelope className="text-green-600" />
-                  <span>info@bazardor.com</span>
+                  <span>mdjaber.dev@gmail.com</span>
                 </li>
                 <li className="mt-4 p-4 bg-amber-50 rounded-xl border border-amber-100">
                   <p className="text-xs text-amber-700 font-medium italic">
