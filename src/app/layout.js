@@ -1,13 +1,16 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+// সঠিক পাথ দিন:
+import Header from "./components/layouts/Header";
+import Footer from "./components/layouts/Footer";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
@@ -20,9 +23,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* <Header /> */}
         {children}
+        <Footer/>
       </body>
     </html>
   );
